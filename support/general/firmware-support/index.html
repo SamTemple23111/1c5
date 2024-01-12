@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html class="no-js" id="window" lang="en">
+
+<head>
+  
+  
+  <title>
+    
+      Trezor Hardware Wallet (Official) | The original and most secure hardware wallet.
+    
+  </title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="shortcut icon" href="../../../static/images/favicon.ico">
+
+  
+    <meta name="keywords" content="trezor official bitcoin ethereum litecoin secure security hardware wallet cryptography cryptocurrency u2f password manager gpg">
+    <meta name="description" content="Discover the secure vault for your digital assets. Store bitcoins, litecoins, passwords, logins, and keys without worries.">
+    <meta property="og:type" content="product" />
+    <meta property="fb:page_id" content="198891850249377" />
+    <meta property="og:title" content="Trezor Hardware Wallet | The original & most secure bitcoin wallet." />
+    <meta property="og:image" content="https://trezor.io/static/images/trezor_social02.jpg" />
+    <meta property="og:description" content="Discover the secure vault for your digital assets. Store bitcoins, litecoins, passwords, logins, and keys without worries." />
+    <meta property="og:url" content="https://trezor.io/" />
+    <meta property="product:brand" content="Trezor" />
+    <meta property="product:category" content="Electronics" />
+    <meta property="product:plural_title" content="Trezors" />
+    <meta property="product:price:amount" content="55" />
+    <meta property="product:price:currency" content="USD" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Trezor">
+    <meta name="twitter:creator" content="@Trezor">
+    <meta name="twitter:title" content="Trezor Hardware Wallet | The original & most secure bitcoin wallet.">
+    <meta name="twitter:description" content="Discover the secure vault for your digital assets. Store bitcoins, litecoins, passwords, logins, and keys without worries." />
+    <meta name="twitter:image:src" content="https://trezor.io/static/images/trezor_social02.jpg">
+    <meta name="twitter:domain" content="https://trezor.io/">
+  
+  
+  <link rel="stylesheet" href="../../../static/css/style_0902132020.css">
+  
+  <script>
+    dataLayer = [{
+      'pageType': 'content',
+      'currency': 'EUR'
+    }]
+  </script>
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T6BZ9VS');</script>
+  
+  <script src="https://www.google.com/recaptcha/api.js?onload=recaptchaLoaded&amp;render=explicit" async defer></script>
+  
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6BZ9VS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+<nav class="navbar navbar-dark navbar-full" role="navigation" aria-label="Global Navigation">
+    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar1"
+            aria-controls="exCollapsingNavbar1" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+    </button>
+    <a class="navbar-brand-mini hidden-md-up" href="../../../index.html"><img class="trezor-logo"
+                                                            src="../../../static/images/trezor-logo.png"
+                                                            alt="best bitcoin wallet and security device"/></a>
+    <div class="container">
+        <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar1">
+            <a class="navbar-brand hidden-sm-down" href="../../../index.html"><img class="trezor-logo"
+                                                                 src="../../../static/images/trezor-logo.png"
+                                                                 alt="best bitcoin wallet and security device"/><span
+                    class="trezor-title">TREZOR.io</span></a>
+            <ul class="nav navbar-nav float-sm-left float-md-right float-xs-left social">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../../index.html" title="Presentation page of TREZOR - bitcoin wallet and security device">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../../../start/index.html" title="Visit Wallet for your TREZOR security device">Wallet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blog.trezor.io/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wiki.trezor.io/Welcome">Wiki</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../../index.html">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shop-btn" href="https://shop.trezor.io" data-amount="0" title="Go to shop and order TREZOR">
+                        Shop
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  
+  
+<div class="shadow-search" id="search-shadow"></div>
+<div class="jumbotron-covid19">
+    <div>
+        <p>Delivery of your parcel may take longer than usual due to the fact that shipping companies are facing issues caused by the current COVID-19 pandemic situation - estimated delivery times are:</p>
+        <ul>
+            <li>National post - up to 20 days (instead of 7 days)</li>
+            <li>DHL and UPS - up to 7 business days (instead of 1-3 business days)</li>
+        </ul>
+    </div>
+</div>
+<div class="jumbotron-help compact">
+    <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth">
+            <source src="../../../static/video/MP4/Working-Space.mp4.html" type="video/mp4"/>
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source src="../../../static/video/WEBM/Working-Space.webm.html" type="video/webm"/>
+            Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+        <div class="poster hidden">
+            <img src="../../../static/video/snapshots/Working-Space.jpg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-xs-center">
+                <h1>Help Center.</h1>
+                <p class="lead">
+                    How can we help you?
+                </p>
+                <div class="help">
+                    <div class="search_form">
+                        <form action="#" type="get" class="input-wrapper" id="js-search">
+                            <input type="search" name="quick_search" placeholder="Quick search your issue"
+                                   id="search">
+                        </form>
+                        <div class="search-results" id="search-results">
+                            <div class="category has-res">
+                                <div class="row">
+                                    <div class="col-xs-12 results" id="results">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="category no-res">
+                                <div class="row">
+                                    <div class="col-xs-12 result-title">
+                                        <div class="res"><strong>No Results</strong></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="help-nav" id="help-center-nav" style="display: none;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-6 large-tile">
+                <a href="../../technical/index.html" class="nav-link pushstate">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <i class="fa fa-life-ring" aria-hidden="true"></i>
+                            Technical Issues
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-3  col-md-6 large-tile">
+                <a href="../../logistics/index.html" class="nav-link pushstate">
+                    <i class="fa fa-truck" aria-hidden="true"></i>
+                    Orders &amp; Shipping
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="../index.html" class="nav-link pushstate">
+                            <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                            FAQ
+                        </a>
+                    </div>
+                    <div class="col-xs-12">
+                        <a href="http://status.trezor.io/" class="nav-link">
+                            <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                            System status
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <a href="https://wiki.trezor.io/User_manual" class="nav-link">
+                            <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                            User Manual
+                        </a>
+                    </div>
+                    <div class="col-xs-12">
+                        <a href="https://www.reddit.com/r/TREZOR/" class="nav-link">
+                            <i class="icon-bubbles4" aria-hidden="true"></i>
+                            Community Advice
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="help" id="help">
+    <div class="shadow-search" id="search-shadow"></div>
+    <div class="container">
+        <div class="back-btn">
+            <a href="#" onClick="back(event)" class="arrow-back">Back</a>
+        </div>
+        <div class="scene technical " >
+            <div id="content">
+                <noscript>
+                    <span>Sorry, Troubleshooter only works with JavaScript enabled.</span>
+                </noscript>
+                <div class="breadcrumbs"></div>
+                
+                    <div id="preloader" class="current">
+                        <div class="loader-wrapper">
+                            <div class="loader" id="loader">Loading...</div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="scene general loaded" style="display: block;">
+            <div id="content">
+                <noscript>
+                    <span>Sorry, Troubleshooter only works with JavaScript enabled.</span>
+                </noscript>
+                <div class="breadcrumbs"></div>
+                
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <div class="content-wrapper">
+                                <h2 class="header">Firmware support</h2>
+                                <div class="text">
+                                    
+                                        <p>The coin in question is only supported in Trezor's (the hardware device) firmware at the moment.</p>
+<p><br>
+This means that there is no user graphic interface (software wallet) to help a casual user use this cryptocurrency. In such a case, the firmware (operating system on the device) recognizes the cryptocurrency, and maybe it can even sign the transactions and operate, but it is only viable for very very technical users who can operate in this experience using a command line and programming.<br>
+</p>
+<p>Our goal is to have all of the supported coins (or at least as many as possible) natively integrated into our wallet.trezor.io<br>
+Unfortunately, I am not able to give you any specific timelines or promises right now.</p>
+                                    
+                                </div>
+                                <ul class="option-list">
+                                    
+                                        
+                                            <li data-id="31" onclick="addStep(31, 'general')">
+                                                <a href="../feature-request/index.html" class="pushstate">
+                                                    
+                                                    I didn&#39;t find the answer and I want to contact Trezor support
+                                                    
+                                                </a>
+                                            </li>
+                                        
+                                    
+                                </ul>
+                            </div>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+            </div>
+        </div>
+        <div class="scene logistics " >
+            <div id="content">
+                <noscript>
+                    <span>Sorry, Troubleshooter only works with JavaScript enabled.</span>
+                </noscript>
+                <div class="breadcrumbs"></div>
+                
+                    <div id="preloader" class="current">
+                        <div class="loader-wrapper">
+                            <div class="loader" id="loader">Loading...</div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+        <div class="scene not-found">
+            <section class="error" id="error">
+                <div class="container text-center">
+                    <div class="col-sm-12">
+                        <h1 id="err">Error 404</h1>
+                    </div>
+                    <div class="col-sm-12">
+                        <h2>Page not found.</h2>
+                        <p>The page could not be found on this server. Try to change the address and reload the page ...</p>
+                        <p>
+                            <a href="../../index.html" class="btn btn-primary-full shop-btn">Support</a>
+                            <a href="../../../index.html" class="btn btn-primary-outline shop-btn ml-1">Homepage</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div style="display: none;">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-technical-issue">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" id="fd_name" maxlength="255">
+		</div>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+		<div class="form-group">
+			<div class="device-detection"></div>
+		</div>
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="Technical">
+		<!-- Type -->
+		<input type="hidden" name="cf_type" id="cf_type" value="Issue">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043001043264">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="technical-recaptcha-13"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-general-feature-request">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" id="fd_name" maxlength="255">
+		</div>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="General">
+		<!-- Type: 'Question', 'Request' or 'Issue' -->
+		<input type="hidden" name="type" id="fd_type" value="Request">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043000687485">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="general-recaptcha-31"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+                <div class="content-wrapper" id="form-general-question">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" id="fd_name" maxlength="255">
+		</div>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="General">
+		<!-- Type: 'Question', 'Request' or 'Issue' -->
+		<input type="hidden" name="type" id="fd_type" value="Question">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043000687485">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="general-recaptcha-32"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-general-shamir">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" value="Shamir" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="General">
+		<!-- Type: 'Question', 'Request' or 'Issue' -->
+		<input type="hidden" name="type" id="fd_type" value="Question">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043001596706">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="general-recaptcha-35"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-general-btc-only-firmware">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" value="BTC only firmware" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="General">
+		<!-- Type: 'Question', 'Request' or 'Issue' -->
+		<input type="hidden" name="type" id="fd_type" value="Question">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043001596706">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="general-recaptcha-37"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+                <div class="content-wrapper" id="form-general-super-shamir-feedback">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" value="Super Shamir feedback" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="General">
+		<!-- Type: 'Question', 'Request' or 'Issue' -->
+		<input type="hidden" name="type" id="fd_type" value="Question">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043001596706">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="general-recaptcha-38"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+                <div class="content-wrapper" id="form-general-fido2-feedback">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" value="FIDO2 feedback" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="General">
+		<!-- Type: 'Question', 'Request' or 'Issue' -->
+		<input type="hidden" name="type" id="fd_type" value="Question">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043001596706">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="general-recaptcha-39"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+                <div class="content-wrapper" id="form-general-buy-feature">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" value="Buy feature" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="General">
+		<!-- Type: 'Question', 'Request' or 'Issue' -->
+		<input type="hidden" name="type" id="fd_type" value="Question">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043001596706">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="general-recaptcha-40"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-logistics-form-trezor-shop">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" id="fd_name" maxlength="255">
+		</div>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		
+
+		
+		<div class="form-group">
+			<label>How did you pay?</label>
+			<select name="payment_method" id="cf_payment_method" class="form-control">
+				<option></option>
+				<option>Credit/Debit Card</option>
+				<option>BTC Pay</option>
+				<option>Globeee</option>
+				<option>Other</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Transaction ID</label>
+			<input type="text" name="transaction_id" class="form-control" id="cf_transaction_id" maxlength="255">
+			<small>Please enter transaction identifier from Bitcoin network, Globee, GoPay, or Credit Card.</small>
+		</div>
+		
+
+		
+		<div class="form-group">
+			<label>Order Token</label>
+			<input type="text" name="order_id" class="form-control" id="cf_order_id" maxlength="255">
+			<small>Please enter order token found in your invoice or order confirmation email. It is a 30-character long identifier of your order.</small>
+		</div>
+		
+
+		
+		<div class="form-group">
+			<label>Tracking Number</label>
+			<input type="text" name="tracking_number" class="form-control" id="cf_tracking_number" maxlength="255">
+			<small>This is the tracking number of your package. If your package has not been shipped yet, you will not have a tracking number.</small>
+		</div>
+		
+
+		
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="Logistics">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043000687484">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="logistics-recaptcha-36"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-logistics-form-fake-trezor">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" id="fd_name" maxlength="255">
+		</div>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		
+
+		
+
+		
+
+		
+
+		
+		<div class="form-group">
+			<label>Photo of the package (front and back) and photo of the hologram</label>
+			<div class="drop-zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+				Drag file(s) here or 
+				<button type="button" class="btn-upload">
+					click here to upload
+					<input type="file" name="attachments[]" id="fd_attachments" class="form-file" multiple="multiple">
+				</button>
+				<div id="files-upload"></div>
+				<div id="files-progress"><div><div></div></div></div>
+			</div>
+			<small>Files must be less than 20 MB.</small>
+		</div>
+		
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="Logistics">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043000687484">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="logistics-recaptcha-53"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-logistics-form-ship-to-my-country">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" id="fd_name" maxlength="255">
+		</div>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		
+		<div class="form-group">
+			<label>Which country would you like to request?</label>
+			<input type="text" name="new_shipping_country" id="cf_new_shipping_country" class="form-control" maxlength="255">
+		</div>
+		
+
+		
+
+		
+
+		
+
+		
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="Logistics">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043000687484">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="logistics-recaptcha-66"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-logistics-form-payment-issues">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" id="fd_name" maxlength="255">
+		</div>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		
+
+		
+		<div class="form-group">
+			<label>How did you pay?</label>
+			<select name="payment_method" id="cf_payment_method" class="form-control">
+				<option></option>
+				<option>Credit/Debit Card</option>
+				<option>BTC Pay</option>
+				<option>Globeee</option>
+				<option>Other</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Transaction ID</label>
+			<input type="text" name="transaction_id" class="form-control" id="cf_transaction_id" maxlength="255">
+			<small>Please enter transaction identifier from Bitcoin network, Globee, GoPay, or Credit Card.</small>
+		</div>
+		
+
+		
+
+		
+
+		
+		<div class="form-group">
+			<label>Screenshot of the payment</label>
+			<div class="drop-zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+				Drag file(s) here or 
+				<button type="button" class="btn-upload">
+					click here to upload
+					<input type="file" name="attachments[]" id="fd_attachments" class="form-file" multiple="multiple">
+				</button>
+				<div id="files-upload"></div>
+				<div id="files-progress"><div><div></div></div></div>
+			</div>
+			<small>Files must be less than 20 MB.</small>
+		</div>
+		
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="Logistics">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043000687484">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="logistics-recaptcha-73"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+        
+            
+        
+            
+                <div class="content-wrapper" id="form-logistics-form">
+                    <form class="form freshdesk-form">
+	<div id="form-container">
+		<h2>Contact form</h2>
+		<div class="form-group">
+			<label>Name</label>
+			<input type="text" name="name" class="form-control" id="fd_name" maxlength="255">
+		</div>
+		<div class="form-group">
+			<label>Email Address<sup>*</sup></label>
+			<input type="text" name="email" class="form-control" id="fd_email" maxlength="255">
+			<span class="error hide">Please enter a valid email address.</span>
+		</div>
+		<div class="form-group">
+			<label>Subject<sup>*</sup></label>
+			<input type="text" name="subject" class="form-control" id="fd_subject" maxlength="255">
+			<span class="error hide">Please enter a subject.</span>
+		</div>
+
+		<div class="form-group">
+			<label>Message<sup>*</sup></label>
+			<textarea class="form-control" name="description" id="fd_description" rows="5"></textarea>
+			<span class="error hide">Please enter your message.</span>
+		</div>
+
+		
+
+		
+
+		
+		<div class="form-group">
+			<label>Order Token</label>
+			<input type="text" name="order_id" class="form-control" id="cf_order_id" maxlength="255">
+			<small>Please enter order token found in your invoice or order confirmation email. It is a 30-character long identifier of your order.</small>
+		</div>
+		
+
+		
+		<div class="form-group">
+			<label>Tracking Number</label>
+			<input type="text" name="tracking_number" class="form-control" id="cf_tracking_number" maxlength="255">
+			<small>This is the tracking number of your package. If your package has not been shipped yet, you will not have a tracking number.</small>
+		</div>
+		
+
+		
+
+		<!-- Category: 'Technical', 'Logistics' or 'General' -->
+		<input type="hidden" name="cf_category" id="cf_category" value="Logistics">
+		<!-- Group: general=2043000687485, logistics=2043000687484, technical=2043001043264 -->
+		<input type="hidden" name="group" id="fd_group_id" value="2043000687484">
+
+		<div class="form-group">
+			<label>Are you a robot?<sup>*</sup></label>
+			<div class="g-recaptcha" id="logistics-recaptcha-76"></div>
+		</div>
+
+		<div class="flex-row flex-center">	
+			<div class="checkbox" for="privacy-policy">
+				<div class="checkbox-icon">
+					<input class="form-check-input" type="checkbox" id="privacy-policy">
+					<svg class="icon" width="10" height="10" viewBox="320.5870361328125 300.5159912109375 383.51397705078125 384.92401123046875">
+						<path color="#FFFFFF" d="M692.8 313.92l-1.92-1.92c-6.246-7.057-15.326-11.484-25.44-11.484s-19.194 4.427-25.409 11.448l-0.031 0.036-196.48 224-3.84 1.6-3.84-1.92-48.64-57.28c-7.010-7.905-17.193-12.862-28.533-12.862-21.031 0-38.080 17.049-38.080 38.080 0 7.495 2.165 14.485 5.905 20.377l-0.092-0.155 100.8 148.16c5.391 8.036 14.386 13.292 24.618 13.44h8.662c17.251-0.146 32.385-9.075 41.163-22.529l0.117-0.191 195.2-296.32c4.473-6.632 7.141-14.803 7.141-23.597 0-11.162-4.297-21.32-11.326-28.911l0.025 0.028z"></path>
+					</svg>
+				</div>
+				<div class="checkbox-label">
+					I consent for Trezor Support to process my data via Freshdesk system and agree to the terms and conditions of the <a href="https://www.freshworks.com/privacy/" target="_blank" rel="nofollow noopener noreferrer">Privacy Policy</a>.
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary-full">
+				<span>Submit</span>
+				<div class="loader" id="loader"></div>
+			</button>
+		</div>
+	</div>
+	<div id="response"></div>
+</form>
+
+                </div>
+            
+        
+            
+        
+    </div>
+</section>
+
+
+
+  
+<footer id="subscribe">
+  <div class="bottom-part">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-3 hidden-sm-down">
+          <a href="../../../index.html"><img class="trezor-logo lazy"
+                                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                 data-progressive="/static/images/trezor.svg"
+                                                 data-echo="/static/images/trezor.svg"
+                                                 alt="TREZOR best bitcoin wallet and security device logo"/></a>
+          <p>
+            Brought to you by <a href="https://satoshilabs.com" class="satoshilabs">SatoshiLabs</a>.
+          </p>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Products</strong>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../../../index.html">Trezor<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="nav-link shop-btn" href="https://shop.trezor.io" data-amount="0">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../start/index.html">Wallet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blog.trezor.io/">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Help & Support</strong>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://wiki.trezor.io/Welcome">Wiki</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../security/index.html">Security</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Others</strong>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../../../resellers/index.html">Resellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../shop.trezor.io/sales/index.html">Sales & Affiliate partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../enterprise/index.html">Business partners</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row foot">
+        <hr>
+        <div class="col-md-6 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <p>SatoshiLabs s.r.o. © All rights reserved 2012 - <script>document.write(new Date().getFullYear())</script>.</p>
+        </div>
+
+        <div class="offset-lg-3 col-lg-3 offset-md-1 col-md-5 text-md-left text-sm-center text-xs-center">
+          <p>
+            <a href="https://www.facebook.com/trezor.io"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/fb.svg" data-echo="/static/images/footer/fb.svg"  alt="" class="clear lazy" /></a>
+            <a href="https://blog.trezor.io"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/medium.svg" data-echo="/static/images/footer/medium.svg" class="lazy" alt="" /></a>
+            <a href="https://www.reddit.com/r/TREZOR/"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/reddit.svg" data-echo="/static/images/footer/reddit.svg" class="lazy" alt="" /></a>
+            <a href="https://github.com/trezor"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/github.svg" data-echo="/static/images/footer/github.svg" class="lazy" alt="" /></a>
+            <a href="https://twitter.com/trezor"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/twitter.svg" data-echo="/static/images/footer/twitter.svg" class="lazy" alt="" /></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+
+  
+  
+
+  
+<script type='text/javascript' charset='utf-8' src="../../../static/js/vendor/vendors.js"></script>
+<script type='text/javascript' charset='utf-8' src="../../../static/js/sources/page_support_1568970369.js"></script>
+<script type='text/javascript' charset='utf-8' src="../../../static/js/sources/device_detection_1568970366.js"></script>
+
+
+</body>
+
+</html>
