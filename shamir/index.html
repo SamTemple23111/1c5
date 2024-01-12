@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="no-js" id="window" lang="en">
+
+<head>
+  
+  
+  <title>
+    Shamir Backup - Our newest security standard | Trezor
+  </title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="shortcut icon" href="../static/images/favicon.ico">
+
+  
+    <meta name="description" content="Shamir Backup is a revolutionary security standard changing the way you store and protect your recovery seed. Learn more about SLIP-0039 and try it yourself.">
+    <meta name="keywords" content="trezor buytrezor official bitcoin eshop ultra secure hardware wallet shamir backup">
+
+    <meta property="og:type" content="website"/>
+    <meta property="fb:page_id" content="198891850249377"/>
+    <meta property="og:title" content="Shamir Backup - Our newest security standard | Trezor"/>
+    <meta property="og:image" content="https://trezor.io/static/images/og/Shamir.jpg"/>
+    <meta property="og:description" content="Shamir Backup is a revolutionary security standard changing the way you store and protect your recovery seed. Learn more about SLIP-0039."/>
+    <meta property="og:url" content="https://trezor.io/shamir"/>
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Trezor">
+    <meta name="twitter:creator" content="@Trezor">
+    <meta name="twitter:title" content="Shamir Backup - Our newest security standard | Trezor">
+    <meta name="twitter:description" content="Shamir Backup is a revolutionary security standard changing the way you store and protect your recovery seed. Learn more about SLIP-0039."/>
+    <meta name="twitter:image:src" content="https://trezor.io/static/images/og/Shamir.jpg">
+    <meta name="twitter:domain" content="https://trezor.io/shamir">
+
+  
+  <link rel="stylesheet" href="../static/css/style_0902132020.css">
+  
+  <script>
+    dataLayer = [{
+      'pageType': 'content',
+      'currency': 'EUR'
+    }]
+  </script>
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T6BZ9VS');</script>
+  
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6BZ9VS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+<nav class="navbar navbar-dark navbar-full" role="navigation" aria-label="Global Navigation">
+    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar1"
+            aria-controls="exCollapsingNavbar1" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+    </button>
+    <a class="navbar-brand-mini hidden-md-up" href="../index.html"><img class="trezor-logo"
+                                                            src="../static/images/trezor-logo.png"
+                                                            alt="best bitcoin wallet and security device"/></a>
+    <div class="container">
+        <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar1">
+            <a class="navbar-brand hidden-sm-down" href="../index.html"><img class="trezor-logo"
+                                                                 src="../static/images/trezor-logo.png"
+                                                                 alt="best bitcoin wallet and security device"/><span
+                    class="trezor-title">TREZOR.io</span></a>
+            <ul class="nav navbar-nav float-sm-left float-md-right float-xs-left social">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" title="Presentation page of TREZOR - bitcoin wallet and security device">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../start/index.html" title="Visit Wallet for your TREZOR security device">Wallet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blog.trezor.io/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wiki.trezor.io/Welcome">Wiki</a>
+                </li><!-- Telegram @fletchen -->
+                <li class="nav-item ">
+                    <a class="nav-link" href="../support/index.html">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shop-btn" href="https://shop.trezor.io" data-amount="0" title="Go to shop and order TREZOR">
+                        Shop
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  
+  
+
+<div class="app">
+
+<section class="shamir-section relative">
+  <div class="container grid-lg">
+    <div class="columns">
+      <div class="column col-12">
+        <div class="shamir-section-header">
+          <span>Introducing</span>
+          <h1>shamir backup</h1>
+          <p>This new security standard, Shamir Backup, counteracts the two greatest risks involved with protecting your recovery seed: theft and destruction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="shamir-section background__gradient iframe__container">
+  <div class="iframe__inner">
+    <div id="shamir-thumbnail">
+      <div id="shamir-play-btn"></div>
+    </div>
+    <div id="player"></div>
+  </div>
+</div>
+
+<section class="shamir-section inverse">
+  <div class="container grid-lg">
+    <div class="columns">
+      <div class="column col-12">
+        <div class="shamir-section-header offset-header">
+          <h2>How it works</h2>
+        </div>
+      </div>
+    </div>
+    <div class="columns offset__bottom">
+      <div class="column col-4 col-xs-12">
+        <div class="shamir-section-body text-center">
+          <div class="badge-area text-center">
+            <img src="../static/images/shamir_badges/shamir-lp-generate.svg" alt="">
+          </div>
+          <h3>Generate</h3>
+          <p>Choose how many recovery shares you want to generate, and decide how many of them you want to use for recovery.</p>
+        </div>
+      </div>
+      <div class="column col-4 col-xs-12">
+        <div class="shamir-section-body text-center">
+          <div class="badge-area text-center">
+            <img src="../static/images/shamir_badges/shamir-lp-distribute.svg" alt="">
+          </div><!-- Telegram @fletchen -->
+          <h3>Distribute</h3>
+          <p>Distribute those shares however you want, among people and/or secure locations.</p>
+        </div>
+      </div>
+      <div class="column col-4 col-xs-12">
+        <div class="shamir-section-body text-center">
+          <div class="badge-area text-center">
+            <img src="../static/images/shamir_badges/shamir-lp-relax.svg" alt="">
+          </div>
+          <h3>Relax</h3>
+          <p>Sleep peacefully knowing that your private keys are secured by Shamir Backup, safe from theft or accident.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shamir-section relative same-padding same-offset">
+  <div class="inverse bottom-inverse"></div>
+  <div class="container grid-lg">
+    <div class="columns shadowbox flexbox-shadow">
+      <div class="column col-12">
+        <div>
+          <p class="quote__style">
+            <span>“</span>
+              Innovating existing standards and driving progress in the security field is our commitment.
+              <br />
+              <a href="https://blog.trezor.io/shamir-backup-the-revolution-of-private-keys-backup-is-here-858687ed7fe7" target="_blank" rel="nofollow noopener noreferrer">
+                <strong>— Marek “Slush” Palatinus, CEO SatoshiLabs</strong>
+              </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shamir-section">
+  <div class="container grid-md">
+    <div class="columns">
+
+      <div class="column col-12">
+          <div class="shamir-section-header">
+            <h2>Single Backup vs. Shamir Backup</h2>
+          </div>
+
+        <div class="table">
+          <div class="row theader columns">
+            <div class="col-3 column col-sm-3 col-xs-3"></div>
+            <div class="column col-9">
+              <div class="columns trow__inner">
+                <div class="col-6 column">
+                  <div class="th__img__wrap">
+                    <img src="../static/images/shamir_badges/shamir-lp-recov-seed.svg" alt="">
+                  </div>
+                  <div class="flex__row space_start">
+                      <h3>Single Backup</h3>
+                      <div class="sl__container">
+                          <div class="label__content"></div>
+                          <span class="safe__label">Safe</span>
+                      </div>
+                  </div>
+    
+                </div>
+                <div class="col-6 column">
+                  <div class="th__img__wrap">
+                    <img src="../static/images/shamir_badges/shamir-lp-shamir.svg" alt="">
+                  </div>
+                  <div class="flex__row space_start">
+                    <h3>Shamir Backup</h3>
+                    <div class="sl__container safer__width_control">
+                        <div class="label__content fill__bg"></div>
+                        <span class="safe__label fill__bg nowrap">Even safer!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row tbody">
+            <div class="trow columns">
+              <div class="col-3 col-xs-3 offset__inner column"><p><strong>Master Seed</strong></p></div>
+              <div class="column col-9 offset__inner">
+                <div class="columns trow__inner">
+                  <div class="col-6 offset__inner column"><p>A single recovery seed</p></div>
+                  <div class=" col-6 offset__inner column"><p>Up to 16 recovery shares</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="trow columns">
+              <div class="col-3 col-xs-3 offset__inner column"><p><strong>Seed Words</strong></p></div>
+              <div class="column col-9 offset__inner">
+                <div class="columns trow__inner">
+                  <div class="col-6 offset__inner column"><p>12, 18 or 24 word recovery seed</p></div>
+                  <div class=" col-6 offset__inner column"><p>20 or 33 words in each share</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="trow columns">
+              <div class="col-3 col-xs-3 offset__inner column"><p><strong>Advanta&shy;ges</strong></p></div>
+              <div class="column col-9 offset__inner">
+                <div class="columns trow__inner">
+                  <div class="col-6 offset__inner column"><p>Easy to manage</p></div>
+                  <div class=" col-6 offset__inner column"><p>Choose your threshold</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="trow columns">
+              <div class="col-3 col-xs-3 offset__inner column"><p><strong>Recove&shy;ry</strong></p></div>
+              <div class="column col-9 offset__inner">
+                <div class="columns trow__inner">
+                  <div class="col-6 offset__inner column"><p>Indepen&shy;dent control of recovery seed</p></div>
+                  <div class=" col-6 offset__inner column"><p>Administrative control of master seed</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="trow columns">
+              <div class="col-3 col-xs-3 offset__inner column"><p><strong>Indepen&shy;dence</strong></p></div>
+              <div class="column col-9 offset__inner">
+                <div class="columns trow__inner">
+                  <div class="col-6 offset__inner column"><p>Auto&shy;nomous control of assets</p></div>
+                  <div class=" col-6 offset__inner column"><p>Autonomous control of assets</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="trow columns">
+              <div class="col-3 col-xs-3 offset__inner column"><p><strong>Security</strong></p></div>
+              <div class="column col-9 offset__inner">
+                <div class="columns trow__inner">
+                  <div class="col-6 offset__inner column"><p>Secure offline backup of private keys</p></div>
+                  <div class=" col-6 offset__inner column"><p>Secure offline backup of private keys</p></div>
+                </div>
+              </div>
+            </div>
+            <div class="trow columns">
+              <div class="col-3 col-xs-3 offset__inner column"><p><strong>Extra Security</strong></p></div>
+              <div class="column col-9 offset__inner">
+                <div class="columns trow__inner">
+                  <div class="col-6 offset__inner column"></div>
+                  <div class=" col-6 offset__inner column"><p>Eliminated risk of theft or loss</p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shamir-section relative same-padding">
+    <div class="divider absolute-divider"></div>
+    <div class="container grid-md">
+      <div class="columns shadowbox flexbox-shadow">
+        <div class="column col-12">
+          <div><!-- Telegram @fletchen -->
+            <p class="quote__style">
+              <span>“</span>
+              Shamir Backup is considered to be a revolutionary development which may usher in a new era of hardware wallet security altogether.
+                <br />
+                <a href="https://themerkle.com/satoshilabs-introduces-recovery-shares-based-security-standard-for-trezor/" target="_blank" rel="nofollow noopener noreferrer">
+                  <strong>— JP Buntinx, The Merkle Hash</strong>
+                </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="shamir-section">
+  <div class="container grid-lg mansory__wrap">
+    <div class="columns">  
+      <div class="column col-12">
+        <div class="shamir-section-header offset-header">
+          <h2>Got questions?</h2>
+        </div>
+      </div>
+    </div>
+    <div class="columns masonry__layout">
+      <div class="column col-6 col-xs-12 bordered__wrap">
+        <div class="shamir-section-body bordered">
+          <h3>How is Shamir Backup different from the single recovery seed backup?</h3>
+          <p>Shamir Backup lets you generate up to 16 recovery shares - sequences of 20 or 33 words. Single backup recovery seeds consist of 12, 18, or 24 words.</p>
+            <br />
+          <p>Shamir Backup also uses a different wordlist than the BIP-39 recovery seeds. In other words, some of the words used in Shamir backup recovery shares are never used in single seed backups and vice-versa.</p>
+        </div>
+      </div>
+
+      <div class="column col-6 col-xs-12 bordered__wrap">
+        <div class="shamir-section-body bordered">
+          <h3>Is Shamir Backup available for Trezor One?</h3>
+          <p>Shamir Backup is currently available only for Trezor Model T.</p>
+        </div>
+      </div>
+
+      <div class="column col-6 col-xs-12 bordered__wrap">
+        <div class="shamir-section-body bordered">
+          <h3>What happens if some of the shares get lost or stolen?</h3>
+          <p>Shamir Backup offers a significant advantage compared to the single recovery seed. Individual shares do not leak any information about the shared secret, as long as the number of compromised shares does not reach the required threshold. In other words, if you use a 7-of-10 scheme and 5 of your shares get compromised, the attacker has no chance to reconstruct your wallet and cause trouble.</p>
+        </div>
+      </div>
+
+      <div class="column col-6 col-xs-12 bordered__wrap">
+        <div class="shamir-section-body bordered">
+          <h3>What happens if I lose so many recovery shares that I can’t meet the required threshold?</h3>
+          <p>If you can’t meet the required threshold, your wallet will become unrecoverable. For example: if you use a 3-of-4 scheme, where 3 is the required threshold to recover the wallet, and you lose 2 or more of the recovery shares, your wallet will be unrecoverable.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="shamir-section background__gradient art__wrapper">
+  <div class="container grid-lg">
+    <div class="columns">
+      <div class="column col-12">
+          <div class="flex__row">
+            <div class="shadow__wrap">
+                <div class="shamir-section-body">
+                    <div class="background-art-trezor"></div>
+                    <div class="art__content">
+                      <h2>Buy Trezor Model T</h2>
+                      <ul>
+                        <li>Invented for your digital independence</li>
+                        <li>You own your data & Trezor keeps you safe</li>
+                        <li>Store your passwords safely</li>
+                        <li>Reinforce your accounts with U2F</li>
+                      </ul>
+                      <div class="flex__row mobile__row start offset__top inner__icons">
+                          <a href="https://shop.trezor.io" class="btn btn-primary-full shop-btn">
+                            Go to shop
+                          </a>
+                      </div>
+                      <div class="payment-info-items icon__group offset__top">
+                        <div class="card-icon GoPay"></div>
+                        <div class="card-icon btc"></div>
+                      </div>
+                    </div>
+              </div>
+            </div>
+            <div class="shadow__wrap">
+              <div class="background-art">
+                  <div class="art__content">
+                      <h2>Learn more</h2>
+                  <ul>
+                    <li><a href="https://blog.trezor.io/shamir-backup-the-revolution-of-private-keys-backup-is-here-858687ed7fe7" target="_blank" rel="nofollow noopener noreferrer" class="trezor__link">Blog: Shamir Backup — Our Newest Security Standard</a></li>
+                    <li><a href="https://blog.trezor.io/https-blog-trezor-io-dev-corner-shamir-backup-guide-5f9957ff1008" target="_blank" rel="nofollow noopener noreferrer" class="trezor__link">Dev Corner: A Detailed Guide to Shamir Backup</a></li>
+                    <li><a href="https://github.com/satoshilabs/slips/blob/master/slip-0039.md" target="_blank" rel="nofollow noopener noreferrer" class="trezor__link">Github: SLIP-0039 – Shamir’s Secret-Sharing</a></li>
+                    <li><a href="https://wiki.trezor.io/Shamir_Backup" target="_blank" rel="nofollow noopener noreferrer" class="trezor__link">Wiki: Shamir Backup</a></li>
+                  </ul>
+              </div>        
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+<footer id="subscribe">
+  <div class="bottom-part">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-3 hidden-sm-down">
+          <a href="../index.html"><img class="trezor-logo lazy"
+                                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                 data-progressive="/static/images/trezor.svg"
+                                                 data-echo="/static/images/trezor.svg"
+                                                 alt="TREZOR best bitcoin wallet and security device logo"/></a>
+          <p>
+            Brought to you by <a href="https://satoshilabs.com" class="satoshilabs">SatoshiLabs</a>.
+          </p>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Products</strong>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Trezor<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="nav-link shop-btn" href="https://shop.trezor.io" data-amount="0">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../start/index.html">Wallet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blog.trezor.io/">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Help & Support</strong>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://wiki.trezor.io/Welcome">Wiki</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../support/index.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../security/index.html">Security</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Others</strong>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../resellers/index.html">Resellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../shop.trezor.io/sales/index.html">Sales & Affiliate partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../enterprise/index.html">Business partners</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row foot">
+        <hr>
+        <div class="col-md-6 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <p>SatoshiLabs s.r.o. © All rights reserved 2012 - <script>document.write(new Date().getFullYear())</script>.</p>
+        </div>
+
+        <div class="offset-lg-3 col-lg-3 offset-md-1 col-md-5 text-md-left text-sm-center text-xs-center">
+          <p>
+            <a href="https://www.facebook.com/trezor.io"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/fb.svg" data-echo="/static/images/footer/fb.svg"  alt="" class="clear lazy" /></a>
+            <a href="https://blog.trezor.io"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/medium.svg" data-echo="/static/images/footer/medium.svg" class="lazy" alt="" /></a>
+            <a href="https://www.reddit.com/r/TREZOR/"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/reddit.svg" data-echo="/static/images/footer/reddit.svg" class="lazy" alt="" /></a>
+            <a href="https://github.com/trezor"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/github.svg" data-echo="/static/images/footer/github.svg" class="lazy" alt="" /></a>
+            <a href="https://twitter.com/trezor"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/twitter.svg" data-echo="/static/images/footer/twitter.svg" class="lazy" alt="" /></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+
+  
+  
+
+  
+
+<script type="text/javascript">
+  // Load the iframe Player API code asynchronously
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  // Create an <iframe> (and YouTube player)
+  // after the API code downloads.
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '480',
+      width: '840',
+      videoId: 'cRh-NCvHkzM',
+      playerVars: {
+        'rel': 0,
+      },
+      events: {
+        'onReady': onPlayerReady,
+      }
+    });
+  }
+  // The API will call this function when the video player is ready
+  function onPlayerReady(event) {
+    var cover = document.querySelector('#shamir-thumbnail')
+    cover.addEventListener('click', function(e) {
+      event.target.playVideo();
+      cover.style.display = "none";
+    })
+  }
+</script>
+
+
+
+</body>
+
+</html>

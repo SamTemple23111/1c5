@@ -1,0 +1,1597 @@
+<!DOCTYPE html>
+<html class="no-js" id="window" lang="en">
+
+<head>
+  
+  
+  <title>
+    
+      Trezor Hardware Wallet (Official) | The original and most secure hardware wallet.
+    
+  </title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="shortcut icon" href="../static/images/favicon.ico">
+
+  
+    <meta name="keywords" content="trezor official bitcoin ethereum litecoin secure security hardware wallet cryptography cryptocurrency u2f password manager gpg">
+    <meta name="description" content="Discover the secure vault for your digital assets. Store bitcoins, litecoins, passwords, logins, and keys without worries.">
+    <meta property="og:type" content="product" />
+    <meta property="fb:page_id" content="198891850249377" />
+    <meta property="og:title" content="Trezor Hardware Wallet | The original & most secure bitcoin wallet." />
+    <meta property="og:image" content="https://trezor.io/static/images/trezor_social02.jpg" />
+    <meta property="og:description" content="Discover the secure vault for your digital assets. Store bitcoins, litecoins, passwords, logins, and keys without worries." />
+    <meta property="og:url" content="https://trezor.io/" />
+    <meta property="product:brand" content="Trezor" />
+    <meta property="product:category" content="Electronics" />
+    <meta property="product:plural_title" content="Trezors" />
+    <meta property="product:price:amount" content="55" />
+    <meta property="product:price:currency" content="USD" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Trezor">
+    <meta name="twitter:creator" content="@Trezor">
+    <meta name="twitter:title" content="Trezor Hardware Wallet | The original & most secure bitcoin wallet.">
+    <meta name="twitter:description" content="Discover the secure vault for your digital assets. Store bitcoins, litecoins, passwords, logins, and keys without worries." />
+    <meta name="twitter:image:src" content="https://trezor.io/static/images/trezor_social02.jpg">
+    <meta name="twitter:domain" content="https://trezor.io/">
+  
+  
+  <link rel="stylesheet" href="../static/css/style_0902132020.css">
+  
+  <script>
+    dataLayer = [{
+      'pageType': 'content',
+      'currency': 'EUR'
+    }]
+  </script>
+  
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-T6BZ9VS');</script>
+  
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6BZ9VS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+  
+<nav class="navbar navbar-dark navbar-full" role="navigation" aria-label="Global Navigation">
+    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar1"
+            aria-controls="exCollapsingNavbar1" aria-expanded="false" aria-label="Toggle navigation">
+        &#9776;
+    </button>
+    <a class="navbar-brand-mini hidden-md-up" href="../index.html"><img class="trezor-logo"
+                                                            src="../static/images/trezor-logo.png"
+                                                            alt="best bitcoin wallet and security device"/></a>
+    <div class="container">
+        <div class="collapse navbar-toggleable-sm" id="exCollapsingNavbar1"><!-- Telegram @fletchen -->
+            <a class="navbar-brand hidden-sm-down" href="../index.html"><img class="trezor-logo"
+                                                                 src="../static/images/trezor-logo.png"
+                                                                 alt="best bitcoin wallet and security device"/><span
+                    class="trezor-title">TREZOR.io</span></a>
+            <ul class="nav navbar-nav float-sm-left float-md-right float-xs-left social">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html" title="Presentation page of TREZOR - bitcoin wallet and security device">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../start/index.html" title="Visit Wallet for your TREZOR security device">Wallet</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://blog.trezor.io/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://wiki.trezor.io/Welcome">Wiki</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../support/index.html">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shop-btn" href="https://shop.trezor.io" data-amount="0" title="Go to shop and order TREZOR">
+                        Shop
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  
+  
+<section class="security">
+  <div class="security-intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+          <h1>Trezor Security.</h1>
+        </div>
+        <div class="col-lg-7 col-xs-12 text-sm-left text-xs-center">
+          <p>
+            In line with our transparency policy, we are publishing a comprehensive list of all the past security issues of Trezor and our related services.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="security-measures">
+    <div class="container">
+      <h2>Security measures of Trezor.</h2>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+          <div class="text-block">
+            <img src="../static/images/security/shield.png" height="22" alt="shield">
+            <h4>Firmware verification.</h4>
+            <p>The bootloader always verifies the firmware signature. The firmware is only run if correctly signed by SatoshiLabs. Otherwise, a warning is shown.</p>
+          </div><!-- Telegram @fletchen -->
+        </div>
+        <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+          <div class="text-block">
+            <img src="../static/images/security/cpu.png" height="24" alt="cpu">
+            <h4>Ultrasound hardware seal.</h4>
+            <p>Trezor hardware case is ultrasonically welded, making it difficult to be restored after breakage.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+          <div class="text-block">
+            <img src="../static/images/security/key.png" height="14" alt="key">
+            <h4>Protected key operations.</h4>
+            <p>All operations involving private and public keys are only allowed after user authentication via PIN.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+          <div class="text-block">
+            <img src="../static/images/security/lock.png" height="22" alt="lock">
+            <h4>Secure update procedure.</h4>
+            <p>The bootloader erases the device memory if the firmware signature is invalid. Downgrade to a vulnerable version also wipes the memory.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+          <div class="text-block">
+            <img src="../static/images/security/pocket.png" height="20" alt="pocket">
+            <h4>Additional passphrase support.</h4>
+            <p>Trezor supports <a href="https://wiki.trezor.io/Passphrase">BIP39 passphrases</a>, which are never stored or remembered on the device. This provides protection against local hardware attacks.</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+          <div class="text-block">
+            <img src="../static/images/security/settings.png" height="22" alt="settings">
+            <h4>Protected bootloader.</h4>
+            <p>The bootloader is write protected and the JTAG is disabled, so an attacker cannot replace it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+          <div class="text-block">
+            <img src="../static/images/security/rotate.png" height="20" alt="rotate">
+            <h4>Reliable backup & recovery.</h4>
+            <p>Your recovery seed protects you against theft, loss or destruction of your device. Simply restore the recovery seed, and your wallet is back.</p>
+          </div>
+        </div>
+        <div class="security-last col-lg-6 col-xs-12 text-sm-left text-xs-center">
+          <div class="text-block">
+            <a href="https://wiki.trezor.io/Security:Threats" class="arrow">Learn more about security</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="security-incidents">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+          <h2>Past issues.</h2>
+        </div>
+        <div class="col-lg-7 col-xs-12 text-sm-left text-xs-center">
+          <p>Issues not listed below are most likely not real, or they are a misrepresentation with factual inaccuracies.</p>
+        </div>
+      </div>
+      <div class="timeline hidden-md-down">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="date" id="date-1" data-target="1"><p>01</p><div class="dot"></div></div>
+            <div class="date" id="date-2" data-target="2"><p>02</p><div class="dot"></div></div>
+            <div class="date" id="date-3" data-target="3"><p>03</p><div class="dot"></div></div>
+            <div class="date" id="date-4" data-target="4"><p>04</p><div class="dot"></div></div>
+            <div class="date" id="date-5" data-target="5"><p>05</p><div class="dot"></div></div>
+            <div class="date" id="date-6" data-target="6"><p>06</p><div class="dot"></div></div>
+            <div class="date" id="date-7" data-target="7"><p>07</p><div class="dot"></div></div>
+            <div class="date" id="date-8" data-target="8"><p>08</p><div class="dot"></div></div>
+            <div class="date" id="date-9" data-target="9"><p>09</p><div class="dot"></div></div>
+            <div class="date" id="date-10" data-target="10"><p>10</p><div class="dot"></div></div>
+            <div class="date" id="date-11" data-target="11"><p>11</p><div class="dot"></div></div>
+            <div class="date" id="date-12" data-target="12"><p>12</p><div class="dot"></div></div>
+            <div class="date" id="date-13" data-target="13"><p>13</p><div class="dot"></div></div>
+            <div class="date" id="date-14" data-target="14"><p>14</p><div class="dot"></div></div>
+            <div class="date" id="date-15" data-target="15"><p>15</p><div class="dot"></div></div>
+            <div class="date" id="date-16" data-target="16"><p>16</p><div class="dot"></div></div>
+            <div class="date" id="date-17" data-target="17"><p>17</p><div class="dot"></div></div>
+            <div class="date" id="date-18" data-target="18"><p>18</p><div class="dot"></div></div>
+            <div class="date" id="date-19" data-target="19"><p>19</p><div class="dot"></div></div>
+            <div class="date" id="date-20" data-target="20"><p>20</p><div class="dot"></div></div>
+            <div class="date" id="date-21" data-target="21"><p>21</p><div class="dot"></div></div>
+            <div class="date" id="date-22" data-target="22"><p>22</p><div class="dot"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-container">
+        <div class="arrow-left" id="go-prev"><img src="../static/images/security/arrow-left.png" height="15" alt="arrow-left"></div>
+        <div class="arrow-right" id="go-next"><img src="../static/images/security/arrow-right.png" height="15" alt="arrow-right"></div>
+
+        <div id="detail-1" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">01</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Malicious ScriptSig in signed transaction</p>
+              <h4>Detail</h4>
+              <p>A specially crafted transaction could trigger a <a href="https://en.wikipedia.org/wiki/Buffer_overflow">buffer overflow</a> and extract the private key. Local interaction with the knowledge of PIN and passphrase was required.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Seed Exposure</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>Critical</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.2.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Nicolas Bacca</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2014-07-30</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <p><a href="https://github.com/trezor/trezor-firmware/commit/524f2a957afb66e6a869384aceaca1cb7f9cba60">GitHub</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-2" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">02</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Malicious change in mixed transactions</p>
+              <h4>Detail</h4>
+              <p>A specially crafted multisig transaction could leverage a <a href="https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use">ToCToU</a> bug to include a change output of an attacker, which wasn't confirmed by the user.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Theft of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>Critical</p>
+            </div><!-- Telegram @fletchen -->
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.3.1</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Nicolas Bacca</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2015-02-23</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <p><a href="https://github.com/trezor/trezor-firmware/commit/137a60ce017c402ac160258bcc4b5f7b5aba0560">GitHub</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-3" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">03</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Possible key extraction with oscilloscope</p>
+              <h4>Detail</h4>
+              <p>With physical access to the device and an oscilloscope, an attacker could use <a href="https://en.wikipedia.org/wiki/Power_analysis">Power Analysis</a> to extract an individual private key from the device.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Key Exposure</p>
+              <h4>Scalability</h4>
+              <p>Local (Non-invasive)</p>
+              <h4>Severity</h4>
+              <p>High</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.3.3</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Jochen Hoenicke</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2015-03-26</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <p><a href="https://github.com/trezor/trezor-firmware/commit/7c6d2fe395c8475efbc93257892f0efac3d1511c">GitHub</a>, <a href="https://jochen-hoenicke.de/trezor-power-analysis/">Jochen's write-up</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-4" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">04</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Secret leak via SRAM residue</p>
+              <h4>Detail</h4>
+              <p>The SRAM was not cleared on soft reset, allowing extraction using special firmware and direct access to the device board.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Seed Exposure</p>
+              <h4>Scalability</h4>
+              <p>Local (Destructive)</p>
+              <h4>Severity</h4>
+              <p>Moderate</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.5.2</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Sunny</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2017-08-01</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/98e617d8740b85ae01d7d6e0dd3f49e66057a210">GitHub</a>,
+              <a href="https://blog.trezor.io/fixing-physical-memory-access-issue-in-trezor-2b9b46bb4522">Official blogpost</a>,
+              <a href="https://saleemrashid.com/2017/08/17/extracting-trezor-secrets-sram/">Saleem's write-up</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-5" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">05</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>STM32F205 write-protection issue</p>
+              <h4>Detail</h4>
+              <p>The bootloader memory write-protection is not working as intended in the STM32F205, which is used in the Trezor One. The issue was solved by activating the Memory Protection Unit, keeping the bootloader safe from unauthorized write-access.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>-</p>
+              <h4>Scalability</h4>
+              <p>Supply Chain</p>
+              <h4>Severity</h4>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.6.1</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Saleem Rashid</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-02-12</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/9588e8f2736b60916f51e470deb18f55112a6ebc">GitHub</a>,
+              <a href="https://blog.trezor.io/trezor-one-firmware-update-1-6-1-eecd0534ab95">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-6" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">06</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Race condition in recovery</p>
+              <h4>Detail</h4>
+              <p>Specially crafted USB communication could trigger a <a href="https://en.wikipedia.org/wiki/Stack_overflow">stack overflow</a> in recovery which could lead to code execution.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Seed Exposure</p>
+              <h4>Scalability</h4>
+              <p>Local (Non-invasive)</p>
+              <h4>Severity</h4>
+              <p>High</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.6.2</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Christian Reitter</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-05-25</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/c9113fd3f5fcd78e9e560dbac75ed5aae359eb2d">GitHub</a>,
+              <a href="https://blog.trezor.io/details-about-the-security-updates-in-trezor-one-firmware-1-6-2-a3b25b668e98">Official blogpost</a>,
+              <a href="https://blog.inhq.net/posts/trezor-one-dry-run-recovery-stack-overflow/">Christian's blog</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-7" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">07</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Buffer overflow in message processing</p>
+              <h4>Detail</h4>
+              <p>Specially crafted USB packet could trigger a <a href="https://en.wikipedia.org/wiki/Buffer_overflow">buffer overflow</a> which could lead to code execution on older firmwares.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Seed Exposure</p>
+              <h4>Scalability</h4>
+              <p>Local (Non-invasive)</p>
+              <h4>Severity</h4>
+              <p>High</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.6.2</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Christian Reitter</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-05-25</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/c9113fd3f5fcd78e9e560dbac75ed5aae359eb2d">GitHub</a>,
+              <a href="https://blog.trezor.io/details-about-the-security-updates-in-trezor-one-firmware-1-6-2-a3b25b668e98">Official blogpost</a>,
+              <a href="https://blog.inhq.net/posts/trezor-one-rx-buffer-overflow-part1/">Christian's blog</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-8" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">08</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>MPU circumvention via SYSCFG registers</p>
+              <h4>Detail</h4>
+              <p>Security fix deployed via the 1.6.1 firmware update could be circumvented via clever use of the SYSCFG registers. This was fixed by completely disabling the SYSCFG registers via the MPU.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>-</p><!-- Telegram @fletchen -->
+              <h4>Scalability</h4>
+              <p>Supply Chain</p>
+              <h4>Severity</h4>
+              <p>-</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.6.3</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Sunny</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-08-07</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/fdd5cbe20271634dc9ba4424ae40f1d11332cdf2">GitHub</a>,
+              <a href="https://blog.trezor.io/trezor-one-firmware-update-1-6-3-73894c0506d">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-9" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">09</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Buffer overflow in bech32_decode/cash_decode</p>
+              <h4>Detail</h4>
+              <p>The C reference implementation for bech32 has an unsigned integer overflow that can lead to a buffer overflow. The bug was fixed by preventing the out-of-bounds accesses in the code. Later, gabriel Campana reported the same issue in cash_decode function, which was fixed in the same firmware update.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Device freeze</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>None</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.7.1</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Christian Reitter</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-09-26</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/5c6b47288323a6cafe331304d2708a3c2a45f4b0">GitHub</a>,
+              <a href="https://github.com/trezor/trezor-firmware/commit/2bbbc3e15573294c6dd0273d2a8542ba42507eb0">GitHub</a>,
+              <a href="https://blog.trezor.io/details-about-the-security-updates-in-trezor-one-firmware-1-7-1-5c34278425d8">Official blogpost</a>,
+              <a href="https://blog.inhq.net/posts/bech32_decode-summary/">Christian's blog</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-10" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">10</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Side-channel analysis (SCA) of PIN comparison</p>
+              <h4>Detail</h4>
+              <p>Using a SCA bench an attacker could create the database of power consumption and electromagnetic traces of a device. This database could later be used to unlock a locked device using the same SCA bench. The issue was fixed by rewriting the device storage to not compare PINs directly, but rather compare random data stretched by the PIN.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Theft of Funds</p>
+              <h4>Scalability</h4>
+              <p>Local (Destructive)</p>
+              <h4>Severity</h4>
+              <p>Moderate</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.8.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Charles Guillemet</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-10-31</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/4f32cb508383ec0e65843d037f6ac6473a668359">GitHub</a>,
+              <a href="https://blog.trezor.io/details-of-security-updates-for-trezor-one-firmware-1-8-0-and-trezor-model-t-firmware-2-1-0-408e59dc012">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-11" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">11</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Information leak via U2F</p>
+              <h4>Detail</h4>
+              <p>The C/C++ reference implementation for U2F by Yubico contains broken definition of a struct which can leak bytes from RAM via USB. The bug was fixed by updating the structure definition to a new correct one.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>TBD</p>
+              <h4>Scalability</h4>
+              <p>Remote (Unlocked)</p>
+              <h4>Severity</h4>
+              <p>TBD</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.7.2</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Christian Reitter</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-11-26</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/0b26c529ec49daf584f322f3ef959c79694c8cf5">GitHub</a>,
+              <a href="https://blog.trezor.io/details-about-the-security-updates-in-trezor-one-firmware-1-7-2-3c97adbf121e">Official blogpost</a>,
+              <a href="https://blog.inhq.net/posts/u2fhid_init_resp-information-leak/">Christian's blog</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-12" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">12</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>SRAM dump via glitching the firmware update</p>
+              <h4>Detail</h4>
+              <p>Using a special glitching hardware an attacker could trick the device processor into Read Protection level 1 which allows readout of RAM. The issue was fixed by not storing sensitive data in RAM during the firmware update.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Seed Exposure</p>
+              <h4>Scalability</h4>
+              <p>Local (Destructive)</p>
+              <h4>Severity</h4>
+              <p>Moderate</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.8.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>wallet.fail</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-12-27</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/07231d936e41335b3ec44c4c6eb336be006890d0">GitHub</a>,
+              <a href="https://blog.trezor.io/details-of-security-updates-for-trezor-one-firmware-1-8-0-and-trezor-model-t-firmware-2-1-0-408e59dc012">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-13" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">13</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Secret information leak via USB Descriptors</p>
+              <h4>Detail</h4>
+              <p>The attack used specialized hardware to inject a fault into the comparison function in the USB stack. When timed properly, an attacker could trick USB stack into returning sensitive data via USB in the USB descriptor.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Seed Exposure</p>
+              <h4>Scalability</h4>
+              <p>Local (Non-invasive)</p>
+              <h4>Severity</h4>
+              <p>High</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.8.0 + 2.1.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Colin O'Flynn</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2019-01-02</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/22f37e81a3270da5e8e5d6c55abc8f15f3a35567">GitHub T1</a>,
+              <a href="https://github.com/trezor/trezor-firmware/commit/828ba7b5b01f9997a2f8e63e2e5f19d4a3f607af">GitHub T2</a>,
+              <a href="https://blog.trezor.io/details-of-security-updates-for-trezor-one-firmware-1-8-0-and-trezor-model-t-firmware-2-1-0-408e59dc012">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-14" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">14</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Information leak via OLED display</p>
+              <h4>Detail</h4>
+              <p>The attack uses power analysis to read the information shown on the OLED display.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>TBD</p>
+              <h4>Scalability</h4>
+              <p>Local (Non-invasive)</p>
+              <h4>Severity</h4>
+              <p>TBD</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.8.2</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Christian Reitter</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2019-04-08</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/f16c941ed4ac3c2e2c401de931249d0b2f34c29b">GitHub</a>,
+              <a href="https://blog.trezor.io/details-of-the-oled-vulnerability-and-its-mitigation-d331c4e2001a">Official blogpost</a>,
+              <a href="https://blog.inhq.net/posts/oled-side-channel-status-summary/">Christian's blog</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-15" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">15</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Malicious change in mixed transactions</p>
+              <h4>Detail</h4>
+              <p>A specially crafted multisig transaction could leverage a <a href="https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use">ToCToU</a> bug to include a change output of an attacker, which wasn't confirmed by the user.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Theft of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>Critical</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>2.1.8</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Marko Bencun</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2019-10-01</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/8eb6ce08995514c67d175b7197feeadeccc48ff0">GitHub</a>,
+              <a href="https://blog.trezor.io/details-of-the-multisig-change-address-issue-and-its-mitigation-6370ad73ed2a">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-16" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">16</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Monero unlock_time issue</p>
+              <h4>Detail</h4>
+              <p>The Monero field <code>unlock_time</code> was not confirmed on the device's display. Since Monero network does not do any sanity checks for this field, this allows a perpetrator to lock user’s funds for a very long time by simply setting it to a very high value.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Destruction of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>High</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>2.3.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Sebastian Kung</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2020-02-01</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/7944c1a837cb8b7c398be0ab6361d229ac591eab">GitHub</a>,
+              <a href="https://blog.trezor.io/details-of-firmware-updates-for-trezor-one-version-1-9-0-and-trezor-model-t-version-2-3-0-46deb141fc09">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-17" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">17</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>OP_RETURN treated as change output</p>
+              <h4>Detail</h4>
+              <p>The confirmation dialog for the OP_RETURN output wasn't displayed in case the <code>address_n</code> field was provided.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Theft of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>Critical</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.9.0 + 2.3.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Saleem Rashid</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2020-03-02</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://blog.trezor.io/details-of-firmware-updates-for-trezor-one-version-1-9-0-and-trezor-model-t-version-2-3-0-46deb141fc09">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-18" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">18</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Malicious change in mixed transactions</p>
+              <h4>Detail</h4>
+              <p>A specially crafted multisig transaction could leverage a <a href="https://en.wikipedia.org/wiki/Time-of-check_to_time-of-use">ToCToU</a> bug to include a change output of an attacker, which wasn't confirmed by the user.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Theft of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>Critical</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>2.3.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Saleem Rashid</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2020-03-02</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://blog.trezor.io/details-of-firmware-updates-for-trezor-one-version-1-9-0-and-trezor-model-t-version-2-3-0-46deb141fc09">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-19" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">19</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Insufficient field size check in Protobuf</p>
+              <h4>Detail</h4>
+              <p>An attacker could craft a transaction that could be interpreted in two different ways: first, a legitimate transaction which unknowingly contains a very long prevhash; and second, hidden in the long prevhash is an output sending all funds to the attacker's address. The resulting transaction would be non-standard and would not be propagated by the Bitcoin network, so an attacker would need to mine their own block.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Theft of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>Critical</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>2.3.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Saleem Rashid</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2020-03-05</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://blog.trezor.io/details-of-firmware-updates-for-trezor-one-version-1-9-0-and-trezor-model-t-version-2-3-0-46deb141fc09">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-20" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">20</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Malicious change in mixed transactions</p>
+              <h4>Detail</h4>
+              <p>A specially crafted multisig transaction could leverage a inconsistent sanitization of inputs to include a change output of an attacker, which wasn't confirmed by the user.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Theft of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>Critical</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>2.3.0</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Saleem Rashid</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2020-03-07</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://blog.trezor.io/details-of-firmware-updates-for-trezor-one-version-1-9-0-and-trezor-model-t-version-2-3-0-46deb141fc09">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-21" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">21</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Possible large transaction fee via two Segwit transactions</p>
+              <h4>Detail</h4>
+              <p>Due to a design flaw in BIP-143 an attacker could create two Segwit transactions which, when combined together, can send the coins from wallet via a massive transaction fee.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Destruction of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>High</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.9.1 + 2.3.1</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Saleem Rashid</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2020-03-03</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://blog.trezor.io/details-of-firmware-updates-for-trezor-one-version-1-9-1-and-trezor-model-t-version-2-3-1-1eba8f60f2dd">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="detail-22" class="detail collapse">
+          <div class="row">
+            <div class="col-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <div class="number-big col-lg-1 col-xs-12 text-md-center text-xs-center">22</div>
+            </div>
+            <div class="col-lg-5 col-xs-12 text-sm-left text-xs-center">
+              <h4>Issue</h4>
+              <p>Missing path isolation check</p>
+              <h4>Detail</h4>
+              <p>Without this check, an attacker could trick the user into signing a Bitcoin transaction while thinking they are signing a testnet or altcoin transaction.</p>
+            </div>
+            <div class="col-lg-5 offset-lg-1 col-xs-12 text-sm-left text-xs-center">
+              <h4>Impact</h4>
+              <p>Theft of Funds</p>
+              <h4>Scalability</h4>
+              <p>Remote (Interaction)</p>
+              <h4>Severity</h4>
+              <p>Critical</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-2 offset-lg-1 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Fixed in firmware</h4>
+              <p>1.9.2</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Reported by</h4>
+              <p>Yura Pakhuchiy</p>
+            </div>
+            <div class="col-lg-2 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>Date reported</h4>
+              <p>2018-03-01</p>
+            </div>
+            <div class="col-lg-5 col-sm-3 col-xs-12 text-sm-left text-xs-center">
+              <h4>More info</h4>
+              <a href="https://github.com/trezor/trezor-firmware/commit/568da981991652786fd795944203b4686f5893df">GitHub</a>,
+              <a href="https://blog.trezor.io/firmware-updates-for-trezor-model-t-version-2-3-2-and-trezor-model-one-version-1-9-2-f4f9c0f1ed7c">Official blogpost</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-lg-left text-md-center">
+          <div><strong>Notes</strong></div>
+          <br />
+          <p class="small">
+            In June 2017, we were contacted by security researchers Josh Datko and Chris Quartier, regarding a theoretical fault attack vector, by glitching the clock or VCC of the device. Josh and Chris
+            <a href="https://www.youtube.com/watch?v=hAtoRrxFBWs">presented</a> their findings at <a href="https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEF%20CON%2025%20-%20Datko-and-Quartier-Breaking-Bitcoin-Hardware-Wallets.pdf">DEFCON</a>, and we incorporated their recommendations in the firmware version 1.5.1. As their disclosure did not reveal any provably exploitable vulnerabilities, we are not categorizing it as an issue, but we are mentioning it for the sake of completeness.
+          </p>
+          <p class="small">
+            In September 2017, after the release of firmware 1.5.2, the security update fixing the SRAM memory access, a Medium article surfaced, claiming Trezor has been hacked. We evaluated this allegations and found out that the supposed attack vector was closed by the just released firmware update.
+          </p>
+          <p class="small">
+            In August 2018, we were contacted by Filedescriptor, a security researcher, who reported CSRF issues in our Dropbox integration. The issues were fixed and deployed to production shortly after.
+          </p>
+          <p class="small">
+            In August 2020, we were contacted by Gamer7112, a security researcher, who reported XSS issues in Trezor Connect. The issues were fixed and deployed to production shortly after.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="security-leaderboard">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-lg-left col-xs-12 text-xs-center">
+          <h2>Leaderboard.</h2>
+          <p>People that helped us with security.</p>
+        </div>
+        <div class="col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">1</div>
+            <div class="col-lg-5 col-xs-5 border-right"><a href="https://saleemrashid.com/">Saleem Rashid</a></div>
+            <div class="col-lg-6 col-xs-5">60.000 points</div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">2</div>
+            <div class="col-lg-5 col-xs-5 border-right">Sunny</div>
+            <div class="col-lg-6 col-xs-5">50.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">3</div>
+            <div class="col-lg-5 col-xs-5 border-right"><a href="https://www.linkedin.com/in/nbasim">Nicolas Bacca</a></div>
+            <div class="col-lg-6 col-xs-5">20.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">4</div>
+            <div class="col-lg-5 col-xs-5 border-right"><a href="https://github.com/jhoenicke">Jochen Hoenicke</a></div>
+            <div class="col-lg-6 col-xs-5">20.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">5</div>
+            <div class="col-lg-5 col-xs-5 border-right">Christian Reitter</div>
+            <div class="col-lg-6 col-xs-5">12.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">6</div>
+            <div class="col-lg-5 col-xs-5 border-right"><a href="https://twitter.com/_benma_">Marko Bencun</a></div>
+            <div class="col-lg-6 col-xs-5">11.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">7</div>
+            <div class="col-lg-5 col-xs-5 border-right">Colin O'Flynn</div>
+            <div class="col-lg-6 col-xs-5">10.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">8</div>
+            <div class="col-lg-5 col-xs-5 border-right">Charles Guillemet</div>
+            <div class="col-lg-6 col-xs-5">10.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">9</div>
+            <div class="col-lg-5 col-xs-5 border-right">Filedescriptor</div>
+            <div class="col-lg-6 col-xs-5">1.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">10</div>
+            <div class="col-lg-5 col-xs-5 border-right">Luke Jahnke</div>
+            <div class="col-lg-6 col-xs-5">1.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">11</div>
+            <div class="col-lg-5 col-xs-5 border-right">Gabriel Campana</div>
+            <div class="col-lg-6 col-xs-5">1.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">12</div>
+            <div class="col-lg-5 col-xs-5 border-right"><a href="https://github.com/yura-pakhuchiy">Yura Pakhuchiy</a></div>
+            <div class="col-lg-6 col-xs-5">1.000 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">13</div>
+            <div class="col-lg-5 col-xs-5 border-right">Sebastian Kung</div>
+            <div class="col-lg-6 col-xs-5">500 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">14</div>
+            <div class="col-lg-5 col-xs-5 border-right"><a href="https://hackerone.com/gamer7112">Gamer7112</a></div>
+            <div class="col-lg-6 col-xs-5">200 points</div>
+          </div>
+        </div>
+        <div class="offset-lg-4 col-lg-8">
+          <div class="offset-lg-2 col-lg-10 col-xs-12 border-table">
+            <div class="col-lg-1 text-xs-center col-xs-2 border-right">15</div>
+            <div class="col-lg-5 col-xs-5 border-right">Kamil Vavra</div>
+            <div class="col-lg-6 col-xs-5">100 points</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="security-disclosure">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-left text-sm-center text-xs-center">
+          <h2>Responsible disclosure.</h2>
+          <p>We want to keep all our products and services safe for everyone. If you have discovered a security vulnerability, we appreciate your help in disclosing it to us in a responsible manner. We provide a bug bounty program to better engage with security researchers and hackers.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="col-lg-12 bordered">
+            <p><strong>The idea is simple — </strong>you find and report vulnerabilities through responsible disclosure process. After they are confirmed, we recognize your effort by putting your name/nick and link in the table above and reward you a bounty paid in bitcoins!</p>
+          </div>
+        </div>
+      </div>
+      <div class="security-requirements">
+        <div class="row">
+          <div class="col-lg-2 text-xs-center">
+            <h2>Requirements.</h2>
+          </div>
+          <div class="offset-lg-2 col-lg-8 top-buffer">
+            <div class="col-lg-4 rectangle rectangle-green"><img src="../static/images/security/finger.png" height="22" alt="finger">
+              <div class="text-block">
+                <p>Good faith and best effort not to leak or destroy any user or our data.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 rectangle rectangle-black"><img src="../static/images/security/watch.png" height="24" alt="watch">
+              <div class="text-block">
+                <p>A reasonable amount of time to fix the issue before you publish it.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 rectangle rectangle-yellow"><img src="../static/images/security/bell.png" height="22" alt="bell">
+              <div class="text-block">
+                <p>Do not defraud our users or us in the process of discovery.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-lg-left text-md-center">
+          <p class="small">We promise not to bring legal action against researchers who point out a problem provided they do their best to follow the above guidelines. We reserve the right to decide if the bug is real and severe enough to receive the bounty. We will also change our software to preemptively close possible security holes, even though we know they are not vulnerabilities at present. This means we may change our code in response to a report, even though the issue cannot be used as an attack. In other words, we do not pay bounties for unproven, theoretical issues, but we reserve the right to patch them anyway. Show us a working exploit if you want to prove it is a real vulnerability.
+          </p>
+        </div>
+      </div>
+
+      <div class="security-topics">
+        <div class="row">
+          <div class="col-lg-12 text-lg-left text-xs-center">
+            <h3>Relevant topics.</h3>
+          </div>
+        </div>
+        <div class="row top-buffer">
+          <div class="col-lg-4">
+            <div class="col-lg-12 text-lg-center text-xs-center topic">
+              <div class="number">01</div>
+              <div class="text-block">Private key extraction from Trezor.</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col-lg-12 text-lg-center text-xs-center topic">
+              <div class="number">02</div>
+              <div class="text-block">Tricking Trezor into confirming an action without user interaction.</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col-lg-12 text-lg-center text-xs-center topic">
+              <div class="number">03</div>
+              <div class="text-block">Bypassing PIN/passphrase protections of Trezor.</div>
+            </div>
+          </div>
+        </div>
+        <div class="row top-buffer">
+          <div class="col-lg-4">
+            <div class="col-lg-12 text-lg-center text-xs-center topic">
+              <div class="number">04</div>
+              <div class="text-block">Tricking Trezor into running unsigned firmware without warning.</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col-lg-12 text-lg-center text-xs-center topic">
+              <div class="number">05</div>
+              <div class="text-block">XSS or CSRF on wallet.trezor.io</div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="col-lg-12 text-lg-center text-xs-center topic">
+              <div class="number">06</div>
+              <div class="text-block">Obtaining user information from the Trezor Wallet backends.</div>
+            </div>
+          </div>
+        </div>
+        <div class="row top-buffer">
+          <div class="col-lg-12">
+            <h3>Please, do not report.</h3>
+            <ul>
+              <li>vulnerabilities on sites hosted by third parties (MailChimp, Medium, Twitter, Facebook, CloudFlare, etc.)</li>
+              <li>denial of service attacks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="security-send top-buffer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-lg-center text-xs-center white-paragraph">
+          <h2>How to disclose an issue.</h2>
+          <p>You can disclose a vulnerability by directly contacting our Security Team.</p>
+        </div>
+      </div>
+
+      <div class="form-content" id="formStep1">
+        <div class="row">
+          <div class="col-lg-4 text-md-left text-sm-center text-xs-center">
+            <h3>Important information to include</h3>
+            <div class="number-big">1 of 3</div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+            <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+              <div class="text-block">
+                <img src="../static/images/security/code.png" height="14" alt="code">
+                <h4>Code</h4>
+                <p>Code which reproduces the issue as a proof of concept.</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+              <div class="text-block">
+                <img src="../static/images/security/description.png" height="14" alt="description">
+                <h4>Detailed description</h4>
+                <p>Thorough explanation and the potential impact of the bug.</p>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+              <div class="text-block">
+                <img src="../static/images/security/user.png" height="20" alt="user">
+                <h4>Your info</h4>
+                <p>Your name/nick and link for attribution on this page (optional).</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-xs-12 text-sm-left text-xs-center">
+              <div class="text-block">
+                <img src="../static/images/security/btc.png" height="20" alt="btc">
+                <h4>Bitcoin address</h4>
+                <p>Address for your bounty.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <a href="#" class="btn btn-primary-full pull-right col-sm-12 nextStep" data-target="2">Continue to next step</a>
+        </div>
+      </div>
+
+      <div class="form-content collapse" id="formStep2">
+        <div class="row">
+          <div class="col-lg-4 text-md-left text-sm-center text-xs-center">
+            <h3>Important information to include</h3>
+            <div class="number-big">2 of 3</div>
+          </div>
+          <div class="col-lg-8">
+            <div class="col-lg-12 text-lg-left text-xs-center">
+              <h4>Use both of the following PGP keys when submitting sensitive information</h4>
+            </div>
+            <div class="col-lg-6 top-buffer">
+              <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/86E6792FC27BFD478860C11091F3B339B9A02A3D">
+                <div class="col-lg-12 rectangle"><img src="../static/images/security/download.png" alt="download" height="20px">Stick, PGP key.</div>
+              </a>
+            </div>
+            <div class="col-lg-6 top-buffer">
+              <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/71B5A80A63FE12B0D74DABBFE4A883364AAF6E16">
+                <div class="col-lg-12 rectangle"><img src="../static/images/security/download.png" alt="download" height="20px">Slush, PGP key.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <a href="#" class="arrow-back inline prevStep" data-target="1">Back to previous step</a>
+          <a href="#" class="btn btn-primary-full pull-right nextStep" data-target="3">Continue to next step</a>
+        </div>
+      </div>
+
+      <div class="form-content collapse" id="formStep3">
+        <div class="row">
+          <div class="col-lg-4 text-md-left text-sm-center text-xs-center">
+            <h3>Important information to include</h3>
+            <div class="number-big">3 of 3</div>
+          </div>
+          <div class="col-lg-8">
+            <div class="col-lg-12 text-lg-left text-xs-center">
+              <h4>Send it to the following email address</h4>
+            </div>
+            <div class="col-lg-6 col-md-12 text-sm-center">
+              <a href="#" class="mail-big">
+                  <span class="__cf_email__" data-cfemail="8ffceaecfafde6fbf6cffceefbe0fce7e6e3eeedfca1ece0e2">[email&#160;protected]</span>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <a href="#" class="arrow-back inline prevStep" data-target="2">Back to previous step</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+<footer id="subscribe">
+  <div class="bottom-part">
+    <div class="container">
+      <div class="row ">
+        <div class="col-md-3 hidden-sm-down">
+          <a href="../index.html"><img class="trezor-logo lazy"
+                                                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                                                 data-progressive="/static/images/trezor.svg"
+                                                 data-echo="/static/images/trezor.svg"
+                                                 alt="TREZOR best bitcoin wallet and security device logo"/></a>
+          <p>
+            Brought to you by <a href="https://satoshilabs.com" class="satoshilabs">SatoshiLabs</a>.
+          </p>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Products</strong>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Trezor<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="nav-link shop-btn" href="https://shop.trezor.io" data-amount="0">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../start/index.html">Wallet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://blog.trezor.io/">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Help & Support</strong>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="https://wiki.trezor.io/Welcome">Wiki</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../support/index.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Security</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <ul class="footer-nav">
+            <li class="space-bottom">
+              <strong>Others</strong>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../resellers/index.html">Resellers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../shop.trezor.io/sales/index.html">Sales & Affiliate partners</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../enterprise/index.html">Business partners</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row foot">
+        <hr>
+        <div class="col-md-6 col-sm-12 text-md-left text-sm-center text-xs-center">
+          <p>SatoshiLabs s.r.o. © All rights reserved 2012 - <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script>.</p>
+        </div>
+
+        <div class="offset-lg-3 col-lg-3 offset-md-1 col-md-5 text-md-left text-sm-center text-xs-center">
+          <p>
+            <a href="https://www.facebook.com/trezor.io"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/fb.svg" data-echo="/static/images/footer/fb.svg"  alt="" class="clear lazy" /></a>
+            <a href="https://blog.trezor.io"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/medium.svg" data-echo="/static/images/footer/medium.svg" class="lazy" alt="" /></a>
+            <a href="https://www.reddit.com/r/TREZOR/"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/reddit.svg" data-echo="/static/images/footer/reddit.svg" class="lazy" alt="" /></a>
+            <a href="https://github.com/trezor"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/github.svg" data-echo="/static/images/footer/github.svg" class="lazy" alt="" /></a>
+            <a href="https://twitter.com/trezor"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-progressive="/static/images/footer/twitter.svg" data-echo="/static/images/footer/twitter.svg" class="lazy" alt="" /></a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</footer>
+
+
+  
+  
+
+  
+<script type="text/javascript" charset="utf-8" src="../static/js/vendor/vendors.js"></script>
+<script type="text/javascript" charset="utf-8" src="../static/js/sources/page_security.js"></script>
+
+
+</body>
+
+</html>
